@@ -1,6 +1,6 @@
 library(tidyverse)
 library(dplyr)
-df_2 <- readRDS(file="data/processed/clean_data.RDS")
+df_2 <- readRDS(file="clean_data.RDS")
 
 # Percentage of individuals employed more than 6 months is 0.067
 table(df_2$loe_morethan6months)

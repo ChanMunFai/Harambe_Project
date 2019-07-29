@@ -81,8 +81,8 @@ df_2 <- mutate (df_2, loe_morethan6months = factor(ifelse(length_of_employment>1
 df_2$loe_morethan6months[is.na(df_2$loe_morethan6months)] <- 0
 table(df_2$loe_morethan6months)
 
-write.csv(df, 'data/processed/dataframe1.csv')
-write.csv(df_2, 'data/processed/dataframe2.csv')
+write.csv(df, 'dataframe1.csv')
+write.csv(df_2, 'dataframe2.csv')
 
 # Save to RDS for project purposes
-saveRDS(df_2, file="data/processed/clean_data.rds")
+saveRDS(df_2, file="clean_data.rds")
