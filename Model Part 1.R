@@ -9,6 +9,8 @@ if(!require(skimr)) install.packages("skimr")
 library(skimr)
 if(!require(RANN)) install.packages("RANN")
 library(RANN)
+if (!require(e1071)) install.packages("e1071")
+library(e1071)
 
 # Read in the processed dataframe
 df <- readRDS(file="clean_data.RDS")
@@ -51,8 +53,6 @@ df_test <- anti_join(df, df_train_index)
 ######################
 # SVM
 #####################
-if (!require(e1071)) install.packages("e1071")
-library(e1071)
 #fit <- svm(working ~ grit_score + anygrant + age_at_survey + fin_situ_now + cft_score + com_score + num_score + numearnincome, data = df_train)
 #predicted_svm <- predict(fit, df_test)
 #results_SVM <- table(predicted_svm, df_test$working)
