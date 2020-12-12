@@ -1,6 +1,8 @@
 # iX-Group-5
 Class Project
 
+This project predicts for youths most at risk of unemployment in South Africa. We then presented these results to an unemployment accelerator who would take our insights to allocate resources accordingly. 
+
 - The model that predicts whether someone is likely to be working at baseline is Model_Part_1.R, and uses Naive Bayes.
 
 - The model that predicts whether someone is likely to be working after 6 months is Model_Part_2.R, and uses KNN. It also runs a hierachical clustering model to explore the data.
